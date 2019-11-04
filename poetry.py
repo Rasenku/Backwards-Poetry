@@ -1,24 +1,24 @@
-poem = 'If you are a dreamer, come in,
-If you are a dreamer, a wisher, a liar,
-A hope-er, a pray-er, a magic bean buyer…
-If you’re a pretender, come sit by my fire
-For we have some flax-golden tales to spin.
-Come in!
-Come in!'
+poem = '''A winter blanket
+Covers the Earth in respose
+but only a dream'''
 
 
 #TODO: get a list of strings that contains lines of poem
 
 #Use lines = poem.split("\n")
-def lines_printed_backwards():
-    '''This function takes in a list of strings containing the lines of your poem as arguments and will print the poem lines out in reverse with the line numbers reversed. For example, if you poem is Invitation by Shel Silverstein.'''
+def reverse(s):
+    s.reverse()
+    return ("\n").join(s)
+    # index = len(s)
+    # for line in s:
+    #     print(f"{index} {line}")
+    #     index -= 1
 
-def my_own_rearrange():
-    pass
+s = '''A winter blanket
+Covers the Earth in respose
+but only a dream''' .split("\n")
+print (reverse(s))
 
-def lines_printed_random():
-
-    pass
 
 #Testingcode
 #lines_printed_backwards(lines)
