@@ -8,16 +8,15 @@ but only a dream'''
 #Use lines = poem.split("\n")
 def reverse(s):
     s.reverse()
-    return ("\n").join(s)
-    # index = len(s)
-    # for line in s:
-    #     print(f"{index} {line}")
-    #     index -= 1
+    index = len(s)
+    for line in s:
+        print(f"{index} {line}")
+        index -= 1
 
 s = '''A winter blanket
 Covers the Earth in respose
 but only a dream''' .split("\n")
-print (reverse(s))
+reverse(s)
 
 
 #Testingcode
