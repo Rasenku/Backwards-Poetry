@@ -21,3 +21,21 @@ def lines_printed_random(s):
         lines.append(s[index])
 
     print("\n".join(lines))
+
+
+def unique_lines(s):
+    s = '''A winter blanket
+Covers the Earth in respose
+but only a dream'''
+    print (s.upper())
+
+
+
+
+
+
+
+# if __name__ == '__main__':
+    #Uncomment one line at a time to test
+    # lines_printed_random(s)
+    # unique_lines(s)
