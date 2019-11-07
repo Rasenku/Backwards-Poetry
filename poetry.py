@@ -1,11 +1,5 @@
-poem = '''A winter blanket
-Covers the Earth in respose
-but only a dream'''
+import random
 
-
-#TODO: get a list of strings that contains lines of poem
-
-#Use lines = poem.split("\n")
 def reverse(s):
     s.reverse()
     index = len(s)
@@ -18,6 +12,12 @@ Covers the Earth in respose
 but only a dream''' .split("\n")
 reverse(s)
 
+def lines_printed_random(s):
 
-#Testingcode
-#lines_printed_backwards(lines)
+    lines = []
+
+    for i in range(0, len(s)):
+        index = random.randint(0, len(s) - 1)
+        lines.append(s[index])
+
+    print("\n".join(lines))
