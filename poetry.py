@@ -57,6 +57,7 @@ def lines_printed_random(s):
 
 
 def unique_lines(s):
+    # Makes all words in the poem uppercase
     s = '''The wind whistles past my ears.
 Closing my eyes, I lose all my fears.
 The waves crash into the rocks.
@@ -95,13 +96,22 @@ Right now my mind is finally clear.
 It's time to go as the night draws near.'''
     print (s.upper())
 
+def read_from_file():
+    with open ('poem.txt', 'r') as f:
+        count = 0
+        for line in f:
+            count+=1
+            if count % 2 == 0:
+                print (line)
 
 
 
 
-
+ 
 
 # if __name__ == '__main__':
-    #Uncomment one line at a time to test
-    # lines_printed_random(s)
-    # unique_lines(s)
+    # Uncomment one line at a time to test
+
+        # lines_printed_random(s)
+        # unique_lines(s)
+        # read_from_file()
